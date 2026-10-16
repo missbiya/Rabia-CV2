@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabia Hadia Tahir — Multi-Subject Educator | Science &amp; Lab Instructor | Online Academy Manager</title>
+  <style>
+    :root {
+      /* iOS Light Mode Glass Palette */
+      --bg-primary: #eef2f9;
+      --bg-mesh-1: rgba(52, 199, 89, 0.22);
+      --bg-mesh-2: rgba(0, 122, 255, 0.20);
+      --bg-mesh-3: rgba(88, 86, 214, 0.18);
+      --bg-mesh-4: rgba(48, 176, 199, 0.22);
+
+      --glass-card: rgba(255, 255, 255, 0.58);
+      --glass-card-hover: rgba(255, 255, 255, 0.74);
+      --glass-border: rgba(255, 255, 255, 0.78);
+      --glass-border-subtle: rgba(255, 255, 255, 0.55);
+      --glass-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+      --glass-inner-glow: inset 0 1px 1px rgba(255, 255, 255, 0.9);
+
+      /* Transparent modern pill boxes for comma/semicolon-separated items */
+      --pill-bg: rgba(255, 255, 255, 0.36);
+      --pill-bg-hover: rgba(255, 255, 255, 0.68);
+      --pill-border: rgba(15, 23, 42, 0.13);
+      --pill-border-hover: rgba(0, 122, 255, 0.45);
+      --pill-shadow: 0 4px 14px rgba(15, 23, 42, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+      --text-primary: #1c1c1e;
+      --text-secondary: #3a3a3c;
+      --text-muted: #636366;
+      --accent-blue: #007aff;
+      --accent-teal: #0d9488;
+      --accent-green: #28cd41;
+      --accent-indigo: #5856d6;
+      --accent-orange: #ff9500;
+      --badge-tint: rgba(0, 122, 255, 0.10);
+      --nav-bg: rgba(255, 255, 255, 0.65);
+    }
+
+    [data-theme="dark"] {
+      /* iOS Dark Mode Glass Palette */
+      --bg-primary: #0b0f19;
+      --bg-mesh-1: rgba(48, 209, 88, 0.16);
+      --bg-mesh-2: rgba(10, 132, 255, 0.20);
+      --bg-mesh-3: rgba(94, 92, 230, 0.18);
+      --bg-mesh-4: rgba(100, 210, 255, 0.14);
+
+      --glass-card: rgba(28, 28, 32, 0.56);
+      --glass-card-hover: rgba(44, 44, 48, 0.68);
+      --glass-border: rgba(255, 255, 255, 0.16);
+      --glass-border-subtle: rgba(255, 255, 255, 0.10);
+      --glass-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.35);
+      --glass-inner-glow: inset 0 1px 0.5px rgba(255, 255, 255, 0.22);
+
+      /* Transparent modern pill boxes in Dark Mode */
+      --pill-bg: rgba(255, 255, 255, 0.07);
+      --pill-bg-hover: rgba(255, 255, 255, 0.15);
+      --pill-border: rgba(255, 255, 255, 0.20);
+      --pill-border-hover: rgba(10, 132, 255, 0.65);
+      --pill-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+      --text-primary: #f5f5f7;
+      --text-secondary: #d1d1d6;
+      --text-muted: #98989d;
+      --accent-blue: #0a84ff;
+      --accent-teal: #2dd4bf;
+      --accent-green: #30d158;
+      --accent-indigo: #5e5ce6;
+      --accent-orange: #ff9f0a;
+      --badge-tint: rgba(10, 132, 255, 0.18);
+      --nav-bg: rgba(28, 28, 30, 0.68);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    /* Ambient iOS Mesh Wallpaper */
+    .ios-wallpaper {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(85px);
+      transform: translateZ(0);
+    }
+
+    .orb-1 {
+      width: 520px;
+      height: 520px;
+      background: var(--bg-mesh-1);
+      top: -120px;
+      left: -100px;
+    }
+
+    .orb-2 {
+      width: 580px;
+      height: 580px;
+      background: var(--bg-mesh-2);
+      top: 8%;
+      right: -140px;
+    }
+
+    .orb-3 {
+      width: 500px;
+      height: 500px;
+      background: var(--bg-mesh-3);
+      bottom: 12%;
+      left: 10%;
+    }
+
+    .orb-4 {
+      width: 450px;
+      height: 450px;
+      background: var(--bg-mesh-4);
+      bottom: -100px;
+      right: 8%;
+    }
+
+    /* Floating iOS Top Bar (Dynamic Island inspired) */
+    .ios-navbar-wrap {
+      position: sticky;
+      top: 14px;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 0 16px;
+      margin-bottom: 24px;
+    }
+
+    .ios-navbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--nav-bg);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow), var(--glass-inner-glow);
+      max-width: 1080px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.84rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background: var(--badge-tint);
+      color: var(--accent-blue);
+    }
+
+    .nav-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--pill-border);
+      margin: 0 4px;
+    }
+
+    .ios-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--pill-border);
+      background: var(--pill-bg);
+      color: var(--text-primary);
+      padding: 6px 13px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition: all 0.2s ease;
+    }
+
+    .ios-btn:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+      transform: translateY(-1px);
+    }
+
+    .ios-btn-primary {
+      background: var(--accent-blue);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .ios-btn-primary:hover {
+      background: #0062cc;
+      border-color: transparent;
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 8px 20px 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    /* iOS Frosted Glass Card */
+    .ios-card {
+      background: var(--glass-card);
+      backdrop-filter: blur(26px) saturate(180%);
+      -webkit-backdrop-filter: blur(26px) saturate(180%);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      padding: 28px 30px;
+      box-shadow: var(--glass-shadow), var(--glass-inner-glow);
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Hero Header Card */
+    .hero-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .avatar-ring {
+      width: 84px;
+      height: 84px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      box-shadow: 0 10px 24px rgba(0, 122, 255, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+      flex-shrink: 0;
+    }
+
+    .hero-identity {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(40, 205, 65, 0.14);
+      color: var(--accent-teal);
+      border: 1px solid rgba(40, 205, 65, 0.32);
+      margin-bottom: 8px;
+    }
+
+    [data-theme="dark"] .status-chip {
+      color: #30d158;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #28cd41;
+      box-shadow: 0 0 8px #28cd41;
+    }
+
+    .hero-name {
+      font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .hero-roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .role-pill {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      color: var(--accent-blue);
+    }
+
+    /* Contact Info Grid (iOS Widget Style) */
+    .contact-widgets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .contact-widget {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 15px;
+      border-radius: 18px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+    }
+
+    .contact-widget:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+      transform: translateY(-2px);
+    }
+
+    .widget-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .icon-phone { background: linear-gradient(135deg, #34c759, #28a745); }
+    .icon-mail  { background: linear-gradient(135deg, #007aff, #0055d4); }
+    .icon-pin   { background: linear-gradient(135deg, #ff9500, #ff6b00); }
+    .icon-home  { background: linear-gradient(135deg, #5856d6, #4338ca); }
+
+    .widget-meta {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .widget-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .widget-value {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Section Header */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .section-title-group {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .section-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--badge-tint);
+      color: var(--accent-blue);
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.22rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .section-count {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      color: var(--text-muted);
+    }
+
+    .sub-group-block {
+      margin-bottom: 18px;
+    }
+
+    .sub-group-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .sub-group-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-teal);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Summary Paragraph */
+    .summary-text {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    /* Filter Search Bar for Glass Boxes */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 16px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      margin-bottom: 4px;
+    }
+
+    .filter-input {
+      border: none;
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      width: 100%;
+      outline: none;
+    }
+
+    .filter-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* ROUND BORDER TRANSPARENT MODERN BOXES (FOR COMMA / SEMICOLON ITEMS) */
+    .glass-pills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .modern-glass-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 17px;
+      border-radius: 999px; /* Fully round modern border */
+      background: var(--pill-bg);
+      backdrop-filter: blur(18px) saturate(170%);
+      -webkit-backdrop-filter: blur(18px) saturate(170%);
+      border: 1.2px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      color: var(--text-primary);
+      font-size: 0.89rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      transition: all 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: default;
+      user-select: none;
+    }
+
+    .modern-glass-box:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+      transform: translateY(-2px) scale(1.015);
+      box-shadow: 0 8px 20px rgba(0, 122, 255, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .box-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-blue   { background: var(--accent-blue); box-shadow: 0 0 6px rgba(0, 122, 255, 0.5); }
+    .dot-teal   { background: var(--accent-teal); box-shadow: 0 0 6px rgba(13, 148, 136, 0.5); }
+    .dot-indigo { background: var(--accent-indigo); box-shadow: 0 0 6px rgba(88, 86, 214, 0.5); }
+    .dot-green  { background: var(--accent-green); box-shadow: 0 0 6px rgba(40, 205, 65, 0.5); }
+    .dot-orange { background: var(--accent-orange); box-shadow: 0 0 6px rgba(255, 149, 0, 0.5); }
+
+    /* Experience Timeline Cards */
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .exp-glass-item {
+      padding: 20px 22px;
+      border-radius: 22px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      transition: all 0.2s ease;
+    }
+
+    .exp-glass-item:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .exp-role {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .exp-org {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin-top: 2px;
+    }
+
+    .exp-badge {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--badge-tint);
+      color: var(--accent-blue);
+      border: 1px solid rgba(0, 122, 255, 0.22);
+      white-space: nowrap;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .exp-bullets li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+    }
+
+    .exp-bullets li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-blue);
+    }
+
+    /* Two Column Bottom Grid */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 22px;
+    }
+
+    /* Education Cards */
+    .edu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .edu-item {
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .edu-degree {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .edu-school {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .edu-score {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(40, 205, 65, 0.14);
+      color: var(--accent-teal);
+      border: 1px solid rgba(40, 205, 65, 0.3);
+      white-space: nowrap;
+    }
+
+    [data-theme="dark"] .edu-score {
+      color: #30d158;
+    }
+
+    .hidden-pill {
+      display: none !important;
+    }
+
+    /* Print Styling */
+    @media print {
+      .ios-navbar-wrap, .filter-bar {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+      }
+      .ios-card {
+        box-shadow: none !important;
+        border: 1px solid #d1d5db !important;
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .ios-card {
+        padding: 20px 18px;
+        border-radius: 22px;
+      }
+      .modern-glass-box {
+        padding: 8px 14px;
+        font-size: 0.84rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient iOS Mesh Wallpaper -->
+  <div class="ios-wallpaper">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- Floating iOS Dynamic Island Navbar -->
+  <div class="ios-navbar-wrap">
+    <nav class="ios-navbar" aria-label="Section Navigation">
+      <div class="nav-links">
+        <a href="#summary" class="nav-link">Summary</a>
+        <a href="#competencies" class="nav-link">Core Competencies</a>
+        <a href="#skills" class="nav-link">Technical &amp; Academic Skills</a>
+        <a href="#experience" class="nav-link">Teaching Experience</a>
+        <a href="#lab-experience" class="nav-link">Lab Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+      </div>
+      <div class="nav-divider"></div>
+      <button class="ios-btn" id="themeToggle" type="button" title="Switch iOS Light / Dark Glass">
+        <span id="themeIcon">🌙</span>
+        <span id="themeLabel">Dark Glass</span>
+      </button>
+      <button class="ios-btn ios-btn-primary" id="printBtn" type="button">
+        <span>🖨️</span>
+        <span>Save / Print PDF</span>
+      </button>
+    </nav>
+  </div>
+
+  <main class="container">
+
+    <!-- HERO PROFILE CARD -->
+    <header class="ios-card hero-card">
+      <div class="hero-top">
+        <div class="avatar-ring" aria-hidden="true">RH</div>
+        <div class="hero-identity">
+          <div class="status-chip">
+            <span class="status-dot"></span>
+            <span>Available for Teaching, Science &amp; Lab Instruction &amp; Online Academy Management</span>
+          </div>
+          <h1 class="hero-name">Rabia Hadia Tahir</h1>
+          <div class="hero-roles">
+            <span class="role-pill">MULTI-SUBJECT EDUCATOR</span>
+            <span class="role-pill">SCIENCE &amp; LAB INSTRUCTOR</span>
+            <span class="role-pill">ONLINE ACADEMY MANAGER</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-widgets">
+        <a href="tel:03219129313" class="contact-widget">
+          <div class="widget-icon icon-phone">📞</div>
+          <div class="widget-meta">
+            <span class="widget-label">WhatsApp / Phone</span>
+            <span class="widget-value">03219129313</span>
+          </div>
+        </a>
+        <a href="mailto:optimistix.girl@gmail.com" class="contact-widget">
+          <div class="widget-icon icon-mail">✉️</div>
+          <div class="widget-meta">
+            <span class="widget-label">Email Address</span>
+            <span class="widget-value">optimistix.girl@gmail.com</span>
+          </div>
+        </a>
+        <div class="contact-widget">
+          <div class="widget-icon icon-pin">📍</div>
+          <div class="widget-meta">
+            <span class="widget-label">Current Location</span>
+            <span class="widget-value">Rawalpindi / Islamabad, Pakistan</span>
+          </div>
+        </div>
+        <div class="contact-widget">
+          <div class="widget-icon icon-home">🏛️</div>
+          <div class="widget-meta">
+            <span class="widget-label">Domicile</span>
+            <span class="widget-value">Chakwal, Punjab, Pakistan</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section id="summary" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">✨</div>
+          <h2 class="section-title">Professional Summary</h2>
+        </div>
+        <span class="section-count">CGPA: 3.55 • A+ Academic Record</span>
+      </div>
+      <p class="summary-text">
+        Food Science and Technology graduate (CGPA: 3.55) with an A+ academic record in F.Sc Pre-Engineering and Matriculation, combined with extensive experience in online academy management through social media and active teaching from Nursery to Intermediate levels. Skilled in explaining academic concepts according to students' grade levels, learning needs, and abilities, along with preparing lessons, organizing study activities, and assisting with homework, assignments, revision, and examination practice. Equipped with strong practical exposure to laboratory testing, physicochemical analysis (pH, total soluble solids/TSS, moisture, ash, and fat), spectrophotometer-based analysis, sample preparation, and laboratory documentation from NARC/FSRI, Dawn Bread, and university food-analysis laboratories.
+      </p>
+    </section>
+
+    <!-- QUICK LIVE FILTER FOR ALL TRANSPARENT BOXES -->
+    <div class="filter-bar">
+      <span>🔍</span>
+      <input
+        type="text"
+        id="skillSearch"
+        class="filter-input"
+        placeholder="Filter Core Competencies, Teaching & Lab Skills, Certifications & Strengths (e.g., Online Academy, Lesson, GLP, pH, ISO 22000)..."
+        aria-label="Filter skills and certifications"
+      />
+    </div>
+
+    <!-- CORE COMPETENCIES (Every semicolon/comma item in its own round-bordered transparent modern box) -->
+    <section id="competencies" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🎯</div>
+          <h2 class="section-title">Core Competencies</h2>
+        </div>
+        <span class="section-count">11 Core Competencies</span>
+      </div>
+      <div class="glass-pills-grid" id="competenciesGrid">
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Online Academy Management &amp; Coordination</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Social Media Student Outreach &amp; Engagement</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Academic Tutoring (Nursery to Intermediate)</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Lesson Planning &amp; Study Activity Organization</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Concept Explanation &amp; Student Progress Monitoring</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Homework, Assignment &amp; Revision Support</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Test Preparation &amp; Examination Practice</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Laboratory Instruction &amp; Safety Protocols (GLP/GHP)</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Physicochemical Analysis &amp; Sample Preparation</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Technical Reporting, Documentation &amp; MS Excel</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Strong Communication, Patience &amp; Time Management</span></div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL & ACADEMIC SKILLS (Every comma/semicolon item in its own round-bordered transparent modern box) -->
+    <section id="skills" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🔬</div>
+          <h2 class="section-title">Technical &amp; Academic Skills</h2>
+        </div>
+        <span class="section-count">27 Teaching &amp; Scientific Skills</span>
+      </div>
+
+      <div id="skillsGrid">
+        <!-- Teaching & Academy Management Skills -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Teaching &amp; Academy Management Skills</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Online Academy Operations</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Student Enrollment &amp; Coordination via Social Media Platforms</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Lesson Preparation</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Organizing Study Activities</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Adapting Teaching Approaches to Students' Learning Needs</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Test Preparation</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Examination Practice</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Homework &amp; Assignment Assistance</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Time Management</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Planning</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Organizational Skills</span></div>
+          </div>
+        </div>
+
+        <!-- Laboratory & Scientific Skills -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Laboratory &amp; Scientific Skills</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>pH Analysis</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>TSS Analysis</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Moisture Analysis</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Ash &amp; Fat Analysis</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Sensory Evaluation</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Rapid Adulteration Tests</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Spectrophotometer-Based Analysis</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Sample Preparation</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Filtration</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Distillation &amp; Extraction</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Handling Laboratory Equipment (Cereal Grinder, Solar Dryer, Gravity Separator)</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>GLP/GHP Practices</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Laboratory Records</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Technical Reports</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>MS Excel Reporting</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING & CERTIFICATIONS (Every semicolon/comma item in its own round-bordered transparent modern box) -->
+    <section id="certifications" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🏅</div>
+          <h2 class="section-title">Training &amp; Certifications</h2>
+        </div>
+        <span class="section-count">18 Modules &amp; Certifications</span>
+      </div>
+      <div class="glass-pills-grid" id="certificationsGrid">
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Laboratory Safety &amp; Food Analysis Training</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Laboratory Sample Preparation</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Physicochemical Analysis</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Food Sampling Techniques</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Quality Assurance &amp; Food Safety Documentation</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>GLP</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>GHP</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>GMP</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>FSMS Awareness</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>HACCP &amp; CCP Monitoring Training</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Halal Compliance (PS:3733)</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>ISO 22000 Food Safety Awareness</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Restaurant Food Safety &amp; SOP Compliance</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Food Processing Operations</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Food Quality Management</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Raw-Material Inspection</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>In-Process Quality Monitoring</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Finished-Product Evaluation</span></div>
+      </div>
+    </section>
+
+    <!-- TEACHING & PROFESSIONAL EXPERIENCE -->
+    <section id="experience" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">👩‍🏫</div>
+          <h2 class="section-title">Teaching &amp; Professional Experience</h2>
+        </div>
+        <span class="section-count">Academy Management &amp; Tutoring</span>
+      </div>
+
+      <div class="timeline-list">
+        <!-- Exp 1 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">1. Online Academy Management</h3>
+              <p class="exp-org">Noor Muslim Academy</p>
+            </div>
+            <span class="exp-badge">2023 – 2026</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Managed end-to-end online academy operations, virtual class schedules, and student-teacher coordination.</li>
+            <li>Handled digital outreach, student enrollment, and parent communication effectively through social media platforms.</li>
+            <li>Supervised online instructional delivery, ensuring quality education, structured lesson plans, and student engagement.</li>
+            <li>Maintained student academic records, attendance logs, and feedback communication.</li>
+          </ul>
+        </article>
+
+        <!-- Exp 2 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">2. Home Tutor</h3>
+              <p class="exp-org">Private Home-Based Teaching</p>
+            </div>
+            <span class="exp-badge">2026 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Provide home-based academic tutoring to students from Nursery to Intermediate across multiple subjects.</li>
+            <li>Explain academic concepts according to students' grade levels, learning needs, and abilities.</li>
+            <li>Assist with homework, assignments, revision, test preparation, and examination practice.</li>
+            <li>Prepare lessons and organize study activities to improve understanding and academic performance.</li>
+            <li>Monitor students' learning progress and adapt teaching approaches where needed.</li>
+            <li>Demonstrate strong communication, patience, time management, planning, and organizational skills.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL EXPERIENCE (LABORATORY & INDUSTRY) -->
+    <section id="lab-experience" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🧪</div>
+          <h2 class="section-title">Additional Experience</h2>
+        </div>
+        <span class="section-count">Laboratory &amp; Industry Placements</span>
+      </div>
+
+      <div class="timeline-list">
+        <!-- Exp 3 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">3. Laboratory Experience – Food Analysis &amp; Processing</h3>
+              <p class="exp-org">Pir Mehr Ali Shah Arid Agriculture University, Rawalpindi</p>
+            </div>
+            <span class="exp-badge">Academic Laboratory Experience</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Performed moisture, ash, fat and TSS testing and spectrophotometer-based analysis.</li>
+            <li>Participated in product-development experiments and formulation trials.</li>
+            <li>Used a cereal grinder, solar dryer and gravity separator.</li>
+            <li>Applied filtration, distillation and extraction and maintained experimental records.</li>
+          </ul>
+        </article>
+
+        <!-- Exp 4 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">4. Intern – Honey Laboratory Testing (FSRI)</h3>
+              <p class="exp-org">National Agriculture Research Centre (NARC), Islamabad/Rawalpindi</p>
+            </div>
+            <span class="exp-badge">6 Weeks</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Participated in honey-sample quality testing and adulteration detection.</li>
+            <li>Performed moisture, pH and TSS testing.</li>
+            <li>Assisted with sample preparation, filtration and laboratory documentation.</li>
+            <li>Maintained testing records in line with GLP.</li>
+            <li>Handled lab equipment following hygiene and safety protocols.</li>
+          </ul>
+        </article>
+
+        <!-- Exp 5 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">5. Intern – Production &amp; Quality Assurance</h3>
+              <p class="exp-org">Dawn Bread, Islamabad</p>
+            </div>
+            <span class="exp-badge">6 Weeks</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Observed bakery production and supported CCP monitoring.</li>
+            <li>Performed pH, moisture and TSS testing.</li>
+            <li>Assisted with GMP inspections and hygiene audits.</li>
+            <li>Maintained QC logs, batch records and PRP documentation.</li>
+            <li>Conducted sensory evaluation and rapid adulteration tests and supported food-safety documentation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION & PROFESSIONAL STRENGTHS -->
+    <div class="two-col-grid" id="education">
+      <!-- Education -->
+      <section class="ios-card">
+        <div class="section-header">
+          <div class="section-title-group">
+            <div class="section-icon">🎓</div>
+            <h2 class="section-title">Education</h2>
+          </div>
+        </div>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div>
+              <div class="edu-degree">BSc (Hons) Food Science &amp; Technology</div>
+              <div class="edu-school">Pir Mehr Ali Shah Arid Agriculture University, Rawalpindi • 2026</div>
+            </div>
+            <span class="edu-score">CGPA: 3.55</span>
+          </div>
+          <div class="edu-item">
+            <div>
+              <div class="edu-degree">F.Sc Pre-Engineering</div>
+              <div class="edu-school">Punjab College for Women, Mandi Town, Bhakkar</div>
+            </div>
+            <span class="edu-score">Grade A+</span>
+          </div>
+          <div class="edu-item">
+            <div>
+              <div class="edu-degree">Matriculation</div>
+              <div class="edu-school">Punjab Public Girls High School, Bhakkar</div>
+            </div>
+            <span class="edu-score">Grade A+</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Strengths, Languages & References -->
+      <section class="ios-card" id="strengths">
+        <div class="section-header">
+          <div class="section-title-group">
+            <div class="section-icon">💡</div>
+            <h2 class="section-title">Professional Strengths &amp; Languages</h2>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 18px;">
+          <div style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 10px;">
+            Professional Strengths
+          </div>
+          <div class="glass-pills-grid" id="strengthsGrid">
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Strong Communication, Patience, Time Management, Planning &amp; Organizational Skills</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Analytical Thinking &amp; Attention to Detail</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Problem Solving &amp; Quality-Focused Approach</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Team Collaboration &amp; Adaptability</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Technical Communication &amp; Documentation Discipline</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Laboratory Safety Awareness &amp; Learning Agility</span></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <div style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 10px;">
+            Languages
+          </div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>English</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>Urdu</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>Local Language</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 10px;">
+            References
+          </div>
+          <div class="modern-glass-box">
+            <span class="box-dot dot-blue"></span>
+            <span>Available upon request.</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <script>
+    // iOS Theme Switcher (Light Glass <-> Dark Glass)
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+    const printBtn = document.getElementById('printBtn');
+    const rootHtml = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const current = rootHtml.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      rootHtml.setAttribute('data-theme', next);
+      if (next === 'dark') {
+        themeIcon.textContent = '☀️';
+        themeLabel.textContent = 'Light Glass';
+      } else {
+        themeIcon.textContent = '🌙';
+        themeLabel.textContent = 'Dark Glass';
+      }
+    });
+
+    printBtn.addEventListener('click', () => {
+      window.print();
+    });
+
+    // Live Search Filter for Round Transparent Modern Boxes
+    const skillSearch = document.getElementById('skillSearch');
+    const allPills = document.querySelectorAll('#competenciesGrid .modern-glass-box, #skillsGrid .modern-glass-box, #certificationsGrid .modern-glass-box, #strengthsGrid .modern-glass-box');
+
+    skillSearch.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      allPills.forEach(pill => {
+        const text = pill.textContent.toLowerCase();
+        if (!query || text.includes(query)) {
+          pill.classList.remove('hidden-pill');
+        } else {
+          pill.classList.add('hidden-pill');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
